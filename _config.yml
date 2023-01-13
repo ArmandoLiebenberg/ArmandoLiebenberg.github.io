@@ -1,1 +1,32 @@
-theme: minima
+# Set theme
+remote_theme: daviddarnes/garth
+
+# File excludes
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+
+# Set plugins
+plugins:
+- jekyll-paginate
+- jekyll-remote-theme
+
+# Site settings
+url: 'https://liebenberg.dev/'
+baseurl: 'liebenberg.dev'
+title: 'Liebenberg.dev'
+description: 'Personal Website'
+permalink: pretty
+logo: "https://image.pngaaa.com/86/5937086-middle.png"
+
+# Pagination
+paginate: 5
+paginate_path: blog/page:num
+
+# Collections
+collections:
+  posts:
+    title: Blog
+    output: true
+    description: "Posts n stuff"
