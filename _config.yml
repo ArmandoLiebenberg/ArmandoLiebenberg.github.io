@@ -13,8 +13,8 @@ plugins:
 - jekyll-remote-theme
 
 # Site settings
-url: 'https://liebenberg.dev/'
-baseurl: 'liebenberg.dev'
+url: ''
+baseurl: ''
 title: 'Liebenberg.dev'
 description: 'Personal Website'
 permalink: pretty
