@@ -10,54 +10,83 @@
       width: 100%;  
       min-height: 100vh;  
       display: flex;  
- }  
+ } 
+ 
+ /* ------------------------- 3 Columns ------------------------------------- */
  .box-conatiner{  
       width: 100%;  
       display: flex;  
       flex-flow: wrap;  
  }  
  .box{  
-      /*width: 33.33%;*/  
-      padding: 15px;  
       min-height: 100%;  
  }  
 
 .box1{
     width: 20%;
+    background-color: #182630;
 }
 
 .box2{
     width: 60%;
+    background-color: #2e3b44;  
 }
 
 .box3{
     width: 20%;
+    padding: 15px;  
+    background-color: #2e3b44;  
 }
 
- .box1{  
-      background-color: hsl(31,77%,52%);  
- }  
- .box2{  
-      background-color: hsl(184,100%,22%);  
- }  
- .box3{  
-      background-color: hsl(179,100%,13%);  
- }  
- .content{  
-      padding: 10px;  
- }  
+ /* ------------------------- links ----------------------------------------- */
+.nav-buttons a{
+    padding: 26px;
+    text-decoration: none;
+    text-transform: uppercase;  
+    font-family: 'Lexend Deca', sans-serif;  
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    color: #FFFFFF;
+}
+
+.nav-buttons a:hover{
+    background-color: #E4E5F1;
+    color:#182630;
+}
+
+.nav-buttons a:active{
+    color: #FF4A1C;
+}
+
+ /* ------------------------- Main ------------------------------------------ */
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.flex-container > div {
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 18px;
+  }
+
+  .flex-container.main-article{
+    background-color: #182630;
+  }
+
+ /* ------------------------- Text ------------------------------------------ */
  h1{  
       color: hsl(0,0%,95%);  
       text-transform: uppercase;  
       font-family: 'Lexend Deca', sans-serif;  
       margin: 20px 0;  
  }  
- p{  
-      color: hsla(0,0%,100%,0.75);  
-      font-family: 'Big Shoulders Display', cursive;  
- } 
- 
- /* for dey tablets */
+
+/* ------------------------- tablets ---------------------------------------- */
  @media screen and (max-width: 1200px) {
     .box3 {
         display: none;
@@ -70,8 +99,9 @@
     }
  }
 
- /* for dey fones */
- @media screen and (max-width: 600px) {
+
+/* ------------------------- Phones ----------------------------------------- */
+ @media screen and (max-width: 650px) {
     .box1, .box2, .box3 {
       width: 100%;
     }
@@ -83,5 +113,23 @@
     .box {
         min-height: 0%;
     }
- }
 
+    .box1{
+        height: 100px;
+    }
+
+    .box2 {
+        min-height: 100%;
+    }
+
+    .nav-buttons{
+        display: none;
+    }
+ }
+/* -------------------------------------------------------------------------- */
+
+.box3 img{
+    float: right;
+    width: 80px;
+    height: 80px;
+}
