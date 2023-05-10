@@ -9,6 +9,7 @@
  body{  
       width: 100%;  
       min-height: 100vh;  
+      background: #2e3b44;
       display: flex;  
  } 
  
@@ -39,7 +40,7 @@
 }
 
  /* ------------------------- links ----------------------------------------- */
-.nav-buttons a{
+.box1 a{
     padding: 26px;
     text-decoration: none;
     text-transform: uppercase;  
@@ -50,14 +51,18 @@
     color: #FFFFFF;
 }
 
-.nav-buttons a:hover{
+.box1 a:hover{
     background-color: #E4E5F1;
     color:#182630;
 }
 
-.nav-buttons a:active{
+.box1 a:active{
     color: #FF4A1C;
 }
+
+.box1 a.icon {
+    display: none;
+  }
 
  /* ------------------------- Main ------------------------------------------ */
 
@@ -69,8 +74,8 @@
 
 .flex-container > div {
     margin: 10px;
-    text-align: center;
-    line-height: 75px;
+    text-align: left;
+    line-height: 45px;
     font-size: 18px;
   }
 
@@ -97,6 +102,7 @@
     .box2 {
         width: 70%;
     }
+
  }
 
 
@@ -111,20 +117,25 @@
     }
 
     .box {
-        min-height: 0%;
+        min-height:unset;
     }
 
-    .box1{
-        height: 100px;
+    body {
+        min-height: unset;
     }
 
-    .box2 {
-        min-height: 100%;
-    }
 
     .nav-buttons{
         display: none;
     }
+
+    .box1 a.icon {
+        background: #182630;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
  }
 /* -------------------------------------------------------------------------- */
 
@@ -132,4 +143,19 @@
     float: right;
     width: 80px;
     height: 80px;
+}
+
+p {
+    color:#FFFFFF;
+}
+
+#terminal-input{
+    overflow: auto;
+    background-color: #182630;
+    opacity: 0.95;
+    border: 0.5rem solid var(--white);
+    border-radius: 4px;
+    color:#FFFFFF;
+    height: 150px;
+    width: 100%;
 }
