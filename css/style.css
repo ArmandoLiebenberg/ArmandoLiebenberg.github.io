@@ -1,15 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+:root {
+    --main:#E4E5F1;
+    --accent:#D2D3DB;
+    --text:#182630;
+    --hover:#2e3b44;
+}
+
+[data-theme="dark"] {
+    --main:#2e3b44;
+    --accent:#182630;
+    --text:#FFFFFF;
+    --hover:#E4E5F1;
+}
+
+[data-theme="light"] {
+    --main:#E4E5F1;
+    --accent:#D2D3DB;
+    --text:#182630;
+    --hover:#2e3b44;
+}
+
  *{  
       padding: 0;  
       margin: 0;  
-      box-sizing: border-box;  
-      /*font-family: 'Big Shoulders Display', cursive;  
-      font-family: 'Lexend Deca', sans-serif;*/  
+      box-sizing: border-box;    
  }  
  body{  
       width: 100%;  
       min-height: 100vh;  
-      background: #2e3b44;
+      background: var(--main);
       display: flex;  
  } 
  
@@ -25,18 +46,18 @@
 
 .box1{
     width: 20%;
-    background-color: #182630;
+    background-color: var(--accent);
 }
 
 .box2{
     width: 60%;
-    background-color: #2e3b44;  
+    background-color: var(--main);  
 }
 
 .box3{
     width: 20%;
     padding: 15px;  
-    background-color: #2e3b44;  
+    background-color: var(--main);  
 }
 
  /* ------------------------- links ----------------------------------------- */
@@ -48,12 +69,12 @@
     text-align: center;
     font-size: 20px;
     display: block;
-    color: #FFFFFF;
+    color: var(--text);
 }
 
 .box1 a:hover{
-    background-color: #E4E5F1;
-    color:#182630;
+    background-color: var(--hover);
+    color:var(--accent);
 }
 
 .box1 a:active{
@@ -75,20 +96,43 @@
 .flex-container > div {
     margin: 10px;
     text-align: left;
-    line-height: 45px;
+    line-height: 25px;
     font-size: 18px;
   }
 
   .flex-container.main-article{
-    background-color: #182630;
+    background-color: var(--accent);
   }
+
+  .box2 p {
+    font-family: 'Sen', sans-serif;
+  }
+
+  .box2 a {
+    text-decoration: none;
+  }
+
+  .footer p {
+    display: inline;
+    float: left;
+  }
+
+  .footer img {
+    width:30px;
+    height:30px;
+    display:inline;
+    float: right;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
  /* ------------------------- Text ------------------------------------------ */
  h1{  
-      color: hsl(0,0%,95%);  
-      text-transform: uppercase;  
+      color: var(--text);  
+      text-transform: uppercase;
+      text-decoration: none;
       font-family: 'Lexend Deca', sans-serif;  
-      margin: 20px 0;  
+      margin: 20px 0; 
  }  
 
 /* ------------------------- tablets ---------------------------------------- */
@@ -130,32 +174,40 @@
     }
 
     .box1 a.icon {
-        background: #182630;
+        background: var(--accent);
         display: block;
         position: absolute;
         right: 0;
         top: 0;
       }
+
+
  }
 /* -------------------------------------------------------------------------- */
 
-.box3 img{
-    float: right;
+#free-toggle {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 80px;
     height: 80px;
 }
 
 p {
-    color:#FFFFFF;
+    color:var(--text);
 }
 
 #terminal-input{
     overflow: auto;
-    background-color: #182630;
+    background-color: var(--accent);
     opacity: 0.95;
-    border: 0.5rem solid var(--white);
-    border-radius: 4px;
-    color:#FFFFFF;
+    border: 0.1rem solid var(--text);
+    border-radius: 5px;
+    color: var(--text);
     height: 150px;
     width: 100%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    outline: none;
+    padding-left: 5px;
 }

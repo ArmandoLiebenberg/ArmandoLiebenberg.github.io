@@ -19,9 +19,9 @@
             <a href="blog.html">Blog</a>
             <a href="photography.html">Photography</a>
         </div>
-        <a href="javascript:void(0);" class="icon" id="burger-menu" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" id="burger-menu" onclick="mobile_menu()">
             <i class="fa fa-bars"></i>
-        </a>       
+        </a>      
     </div>  
     <div class="box box2">
         <div class="flex-container">
@@ -35,17 +35,21 @@
                 <p>clear > clear the terminal</p>
             </div>  
             <div class="terminal">
-                <input type="text" id="terminal-input" autocomplete="off" spellcheck="off" autocorrect="off"/>
+                <input type="text" placeholder="Type help for possible commands!" id="terminal-input" autocomplete="off" spellcheck="off" autocorrect="off"/>
             </div>
             <div class="footer">
                 <p>@ Copyright 2023, Armando Liebenberg</p>
+                <a href="https://github.com/ArmandoLiebenberg"><img src="images/github.png"></a>
+                <a href="https://www.youtube.com/@ArmandosGraphics"><img src="images/youtube.png"></a>
+                <a href="https://twitter.com/ArmandoLiebs"><img src="images/twitter.png"></a>
             </div>
         </div>
     </div>  
 
     <div class="box box3">  
-        <img src="images/toggle_light_mode.png" alt="toggle light mode">
-    </div>  
+    </div>
+
+    <img src="images/light_mode.png" id="free-toggle" alt="toggle light mode" onclick="toggle_theme()">
 </div>  
 
 </body>  

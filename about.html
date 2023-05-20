@@ -14,38 +14,62 @@
     <div class="box box1">  
         <a href="index.html">Armando Liebenberg</a>
         <div class="nav-buttons" id="myLinks">
-            <a href="about.html" style="color:#32F307">About Me</a>
+            <a href="about.html" style="color:#49be25">About Me</a>
             <a href="projects.html">Projects</a>
             <a href="blog.html">Blog</a>
             <a href="photography.html">Photography</a>
         </div>
-        <a href="javascript:void(0);" class="icon" id="burger-menu" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" id="burger-menu" onclick="mobile_menu()">
             <i class="fa fa-bars"></i>
-        </a>       
+        </a>      
     </div>  
     <div class="box box2">
         <div class="flex-container">
             <div class="main-article">
-                <p>My name is Armando Liebenberg and I'm a final year CS student from Brisbane, Australia, currently studying at the University of Queensland (UQ)</p>
+                <p>My name is <span style="color: #FF4A1C">Armando Liebenberg</span> and I'm a final year CS student from Brisbane, Australia, currently studying at the University of Queensland (UQ)</p>
                 <br>
                 <p>In my free time I'm programming, gaming, reading, taking photos, or any of a million more hobbies! Some of them I put here on this very website.</p>
+                <br>
                 <hr>
-                <p>Some of the languages and libraries I'm familiar  with are:</p>
-
+                <br>
+                <p style="opacity:80%">Some of the languages and libraries I'm familiar  with are:</p>
+                <br>
+                <p>Python, C, C++, Java, Matlab, R</p>
+                <P>Numpy, Pandas, MatplotLib</P>
+                <br>
+                <p style="opacity:80%">Whilst some of the personal projects I'm working on are:</p>
+                <br>
+                <p>Cubes - Generating cube scenes in the G3D 3D engine</p>
+                <P>RayTracingFromScratch - A C++ ray/path tracer built from scratch, with SDL2 to handle window management</P>
+                <br>
+                <p style="opacity:80%">Right now I'm working at:</p>
+                <br>
+                <p>IOT ENGINEERING AUSTRALIA - I.T Contractor</p>
+                <p> &emsp; - Working on porting over legacy manufacturing system to newer</p>
+                <p> &emsp;&emsp; database management system version (OpenInsight 9 -> 10)</p>
+                <p> &emsp; - Including data transfer, UI design, scripting, QA.</p>
+                <br>
+                <p>Feel free to check out my resume <a href="">here</a> and also my <a href="https://github.com/ArmandoLiebenberg">github</a></p>
             </div>  
             <div class="terminal">
-                <input type="text" id="terminal-input" autocomplete="off" spellcheck="off" autocorrect="off"/>
+                <input type="text" placeholder="Type help for possible commands!" id="terminal-input" autocomplete="off" spellcheck="off" autocorrect="off"/>
             </div>
             <div class="footer">
                 <p>@ Copyright 2023, Armando Liebenberg</p>
+                <a href="https://github.com/ArmandoLiebenberg"><img src="images/github.png"></a>
+                <a href="https://www.youtube.com/@ArmandosGraphics"><img src="images/youtube.png"></a>
+                <a href="https://twitter.com/ArmandoLiebs"><img src="images/twitter.png"></a>
             </div>
         </div>
     </div>  
 
     <div class="box box3">  
-        <img src="images/toggle_light_mode.png" alt="toggle light mode">
-    </div>  
+    </div>
+
+    <img src="images/light_mode.png" id="free-toggle" alt="toggle light mode" onclick="toggle_theme()">
 </div>  
 
 </body>  
-</html>  
+</html>   
+
+
