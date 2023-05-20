@@ -31,7 +31,6 @@ function toggle_theme() {
 
 window.onload=function(){
     const terminal = document.getElementById('terminal-input')
-    terminal.focus();
 
     const terminalHander = (e) => {
         if (e.key == 'Enter' && e.target.value) {

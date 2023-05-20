@@ -135,8 +135,64 @@
       margin: 20px 0; 
  }  
 
+
+ /* ------------------------- Other ------------------------------------------ */
+ #free-toggle {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+}
+
+p {
+    color:var(--text);
+}
+
+#terminal-input{
+    overflow: auto;
+    background-color: var(--accent);
+    opacity: 0.95;
+    border: 0.1rem solid var(--text);
+    border-radius: 5px;
+    color: var(--text);
+    height: 150px;
+    width: 100%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    outline: none;
+    padding-left: 5px;
+}
+
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
 /* ------------------------- tablets ---------------------------------------- */
  @media screen and (max-width: 1200px) {
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+
     .box3 {
         display: none;
     }
@@ -147,11 +203,18 @@
         width: 70%;
     }
 
+
+
  }
 
 
 /* ------------------------- Phones ----------------------------------------- */
  @media screen and (max-width: 650px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
     .box1, .box2, .box3 {
       width: 100%;
     }
@@ -179,35 +242,9 @@
         position: absolute;
         right: 0;
         top: 0;
-      }
-
+    }
 
  }
 /* -------------------------------------------------------------------------- */
 
-#free-toggle {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 80px;
-    height: 80px;
-}
 
-p {
-    color:var(--text);
-}
-
-#terminal-input{
-    overflow: auto;
-    background-color: var(--accent);
-    opacity: 0.95;
-    border: 0.1rem solid var(--text);
-    border-radius: 5px;
-    color: var(--text);
-    height: 150px;
-    width: 100%;
-    word-wrap: break-word;
-    white-space: pre-wrap;
-    outline: none;
-    padding-left: 5px;
-}
