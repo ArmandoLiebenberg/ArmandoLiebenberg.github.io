@@ -1,4 +1,6 @@
 
+// Hamburger menu for mobile screens
+// Just changes the display type of our container
 function mobile_menu() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
@@ -8,10 +10,13 @@ function mobile_menu() {
     }
 }
 
+// Store the user's light/dark mode preference for navigation between screens
+// and for later visits to the site
 var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 if (storedTheme)
     document.documentElement.setAttribute('data-theme', storedTheme)
 
+// switch theme type and change toggle image
 function toggle_theme() {
     var currentTheme = document.documentElement.getAttribute("data-theme");
     var targetTheme;
@@ -29,9 +34,11 @@ function toggle_theme() {
     localStorage.setItem('theme', targetTheme);
 }
 
+// On load of the website, wait for enter key to be pressed
 window.onload=function(){
     const terminal = document.getElementById('terminal-input')
 
+    // read input from the terminal box
     const terminalHander = (e) => {
         if (e.key == 'Enter' && e.target.value) {
             switch (e.target.value) {
