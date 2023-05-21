@@ -77,9 +77,12 @@ window.onload=function(){
                 case 'twitter':
                     window.open('https://twitter.com/ArmandoLiebs');
                     break;
+                case 'email':
+                    window.location.href = "mailto:armandoliebenberg@gmail.com?subject=Enquiry From Liebenberg.Dev";
+                    break;
             }
+            terminal.value = '';
         }
     }
-    
     terminal.addEventListener('keypress', terminalHander);
 }
