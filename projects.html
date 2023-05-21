@@ -26,8 +26,28 @@
     <div class="box box2">
         <div class="flex-container">
             <div class="main-article">
-                <h1>Main</h1>  
-                <p>This is where the content goes</p>  
+
+                <div id="card-container">
+                    <div class="card">
+                        <img class="card-image" src="images/cubes.JPG">
+                        <p style="font-weight: bold; color: #FF4A1C; font-family: 'Lexend Deca', 'sen'; ">Cubes</p>
+                        <p>Generating cube scenes in the G3D 3D engine</p>
+                    </div>
+        
+                    <div class="card">
+                        <img class="card-image" src="images/raytracingfromscratch.png">
+                        <p style="font-weight: bold; color: #FF4A1C; font-family: 'Lexend Deca', 'sen'; ">RayTracingFromScratch</p>
+                        <p>A C++ ray/path tracer built from scratch</p>
+                    </div>
+        
+                    <div class="card">
+                        <img class="card-image" src="images/cattyping.jpg">
+                        <p style="font-weight: bold; color: #FF4A1C; font-family: 'Lexend Deca', 'sen'; ">Cython</p>
+                        <p>A C++ rendering focused linear algebra library</p>
+                    </div>
+        
+                </div>
+
             </div>  
             <div class="terminal">
                 <input type="text" placeholder="Type help for possible commands!" id="terminal-input" autocomplete="off" spellcheck="off" autocorrect="off"/>
@@ -44,7 +64,7 @@
     <div class="box box3">  
     </div>
 
-    <img src="images/light_mode.png" id="free-toggle" alt="toggle light mode" onclick="toggle_theme()">
+    <img src="images/dark_mode.png" id="free-toggle" alt="toggle light mode" onclick="toggle_theme()">
 </div>  
 
 </body>  

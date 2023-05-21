@@ -185,6 +185,57 @@ p {
     vertical-align: middle;
   }
 
+
+
+
+
+  /* Flexbox container for the project cards on the project page */
+#card-container {
+    display: flex;
+    padding: 10px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Individual card on the projects page */
+.card {
+    width: 275px;
+    background-color: var(--accent);
+    border: 1px solid var(--text);
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* https://www.w3schools.com/css/css3_images.asp */
+}
+
+.card:hover {
+    background-color: var(--hover);
+    transition-duration: 0.2s;
+}
+
+.card p {
+    
+}
+
+.card:hover p {
+    color: var(--main);
+}
+
+.card-image {
+    max-width: 80%;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid var(--text);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
 /* ------------------------- tablets ---------------------------------------- */
  @media screen and (max-width: 1200px) {
 
