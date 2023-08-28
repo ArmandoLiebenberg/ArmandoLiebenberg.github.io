@@ -302,11 +302,13 @@ p {
     }
 
     .box1 a.icon {
-        background: var(--accent);
+        background: rgba(255, 255, 255, 0.6);
         display: block;
         position: absolute;
         right: 0;
         top: 0;
+        border-radius: 0px 0px 0px 16px;
+        border-right: 1px solid rgba(255, 255, 255, 0.3);
     }
 
  }
