@@ -1,11 +1,11 @@
-baseURL = "https://example.com/"
+baseURL = "https://liebenberg.dev/"
 languageCode = "en-us"
 title = "Armando Liebenberg"
 theme = "lekh"
 
 [params]
 Name = "Armando Liebenberg"
-About = "Hey Im Armando. I'm a final year CS student from Brisbane, Australia, currently studying at the University of Queensland (UQ). In my free time I'm programming, gaming, reading, taking photos, or any of a million more hobbies!"
+About = "Hey I'm Armando. I'm a final year CS student from Brisbane, Australia, currently studying at the University of Queensland (UQ). In my free time I'm programming, gaming, reading, taking photos, or any of a million more hobbies!"
 Email = "armandoliebenberg@gmail.com"
 Resume = "" # Add the filename with file extension.
 PostLimit = 3 # Sets the number of posts to display on the front page
