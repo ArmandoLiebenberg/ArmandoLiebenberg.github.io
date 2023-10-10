@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    
+    <title>Armando Liebenberg</title>
+    <link rel="icon" type="image/png" href="/assets/img/favicon.ico" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="/js/dark.js" defer=""></script>
+
+</head>
+
+
+<html>
+<!DOCTYPE html>
+<html>
+
+<body>
+  <header class="site-header">
+
+    <div class="wrapper">
+      <a class="muted small" href="https://liebenberg.dev/">Armando Liebenberg</a>
+    </div>
+  </header>
+</body>
+
+</html>
+
+<h1>Colour Image Quantization</h1>
+<p class="post-meta"><time itemprop="datePublished">October 10, 2023</time>
+</p>
+<p>I recently started a project doing Colour Image Quantization using K-means clustering. I think clustering algorithms, in general, are interesting, and they happen to be a great way to learn about parallel computing and high-performance computing in general.</p>
+<p>Colour quantization is quantization (compressing a range of values) applied to colour spaces, typically of images or video. In practice, this means taking an image, sampling its colour palette, and producing a smaller colour palette that maintains the detail and brightness of the original image.</p>
+<p>This is typically achieved using a clustering algorithm. The colours in the colour palette are treated as vectors in 3D space, often represented in the RGB colour space (although there are other colour spaces better suited for this purpose), and the problem is solved using a clustering algorithm. For this project, I&rsquo;ve opted for the straightforward &lsquo;Naive K-means&rsquo; clustering algorithm.</p>
+<p>In K-means clustering, we initialize a set of points as means, and then for each point in our colour space, we determine the closest mean and associate it with that mean. Subsequently, we calculate the average of all the points belonging to a mean, which serves as the new mean for that cluster.</p>
+<p>By repeating this process until the algorithm converges, we can obtain a refined representation of the colour space using a significantly reduced palette.</p>
+<p>Naturally, the algorithm&rsquo;s performance is quite sensitive to initial conditions. And so there are several methods you can use to initialize these cluster means. Of course, you could just randomly generate them, but this tends to not work out so well. In practice, the most commonly used methods are the &ldquo;Forgy&rdquo; method and &ldquo;random&rdquo; partitioning of the dataset.</p>
+<p>The &ldquo;Forgy&rdquo; method randomly selects points from the dataset as cluster means, whereas the random method randomly assigns tags to each dataset point and then computes initial cluster means based on the averages of these tag sets, effectively starting the algorithm halfway through.</p>
+<p>Both of these methods typically yield satisfactory results, but fine-tuning is often necessary to achieve the desired outcome. Moreover, there are numerous variations of the algorithm to consider, depending on factors such as the dataset, hardware capabilities, and more.</p>
+<p>For my project, I am focusing on implementing the naive K-means algorithm because it&rsquo;s relatively simple to implement and easy to modify. The primary goal of this project is to explore using SIMD, as well as OpenMP and MPI, to speed up compute-heavy programs. (I&rsquo;d also like to look at using CUDA to implement the algorithm, but that might end up being more of a stretch goal).</p>
+<p>Currently, I have a basic implementation in C++, using the STB family of header libraries to handle image manipulation, and I&rsquo;m looking at adding command-line arguments to make the program a bit more usable before I continue with the performance tuning. In the future, I&rsquo;d also like to look at adding a graphical interface to the program, as it would make working with different image files a lot more convenient.</p>
+
+
+<footer>
+    <div>
+        <h3><a href="https://liebenberg.dev/posts">Back to all posts</a></h3>
+    </div>
+    <hr>
+    <p>Go <a href="https://liebenberg.dev//index.xml">here</a> for an RSS feed.</p>
+</footer>
+
+</html>

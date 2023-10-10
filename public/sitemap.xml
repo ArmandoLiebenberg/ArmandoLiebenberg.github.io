@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://liebenberg.dev/</loc>
+    <lastmod>2023-10-10T14:59:49+10:00</lastmod>
+  </url><url>
+    <loc>https://liebenberg.dev/posts/colour-image-quantization/</loc>
+    <lastmod>2023-10-10T14:59:49+10:00</lastmod>
+  </url><url>
+    <loc>https://liebenberg.dev/posts/</loc>
+    <lastmod>2023-10-10T14:59:49+10:00</lastmod>
+  </url><url>
+    <loc>https://liebenberg.dev/categories/</loc>
+  </url><url>
+    <loc>https://liebenberg.dev/tags/</loc>
+  </url>
+</urlset>

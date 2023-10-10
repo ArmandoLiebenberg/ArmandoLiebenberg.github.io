@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Armando Liebenberg</title>
+    <link>https://liebenberg.dev/posts/</link>
+    <description>Recent content in Posts on Armando Liebenberg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Oct 2023 14:59:49 +1000</lastBuildDate><atom:link href="https://liebenberg.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Colour Image Quantization</title>
+      <link>https://liebenberg.dev/posts/colour-image-quantization/</link>
+      <pubDate>Tue, 10 Oct 2023 14:59:49 +1000</pubDate>
+      
+      <guid>https://liebenberg.dev/posts/colour-image-quantization/</guid>
+      <description>I recently started a project doing Colour Image Quantization using K-means clustering. I think clustering algorithms, in general, are interesting, and they happen to be a great way to learn about parallel computing and high-performance computing in general.
+Colour quantization is quantization (compressing a range of values) applied to colour spaces, typically of images or video. In practice, this means taking an image, sampling its colour palette, and producing a smaller colour palette that maintains the detail and brightness of the original image.</description>
+    </item>
+    
+  </channel>
+</rss>
